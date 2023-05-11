@@ -1,0 +1,35 @@
+<html>
+<head><meta charset="us-ascii">
+	<title>Search Curriculums</title>
+    <link rel="stylesheet" href="curriculums-style.css">
+</head>
+<script>
+    var keywords_count = 0;
+</script>
+<script src="program_list.js"></script> 
+<script src="search_kw.js"></script> 
+<script src="curriculums.js"></script>
+<body>
+    <div id="container">
+        <div id="control">
+            <select id="year">
+                <option value="21" selected>2021 - 22</option>
+                <option value="22">2022 - 23</option>
+            </select>
+            <br>
+            <div id="search-line">
+                <select id="course-type">
+                    <option value="major">major</option>
+                    <option value="minor">minor</option>
+                    <option value="ext_major">ext. major</option>
+                    <option value="req">school req.</option>
+                    <option value="all" selected>any prog.</option>
+                </select> in <input id="search-text" placeholder="Type in the program name">
+                <button id="search">search</button>
+                <div id="suggestions">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
